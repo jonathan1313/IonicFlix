@@ -1,0 +1,45 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add Nova Serie</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="closeModal()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item color="flix">
+      <ion-label floating>Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="name"></ion-input>
+    </ion-item>
+    
+    <ion-item color="flix">
+      <ion-label floating>Descrição</ion-label>
+      <ion-input type="text" [(ngModel)]="description"></ion-input>
+    </ion-item>
+
+    <ion-item color="flix">
+      <ion-label floating>Imagem</ion-label>
+      <ion-input type="text" [(ngModel)]="image"></ion-input>
+    </ion-item>
+
+    <ion-item color="flix">
+      <ion-range min="0" max="100" pin="true" [(ngModel)]="score">>
+        <ion-icon range-left name="sad"></ion-icon>
+        <ion-icon range-right name="happy"></ion-icon>
+      </ion-range>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button block color="danger" (click)="saveSerie()">Salvar</button>
+
+</ion-content>

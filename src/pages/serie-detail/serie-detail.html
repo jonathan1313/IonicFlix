@@ -1,0 +1,38 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Detalhes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-row>
+    <img src="{{ serieImage }}" class="img-detail">
+  </ion-row>
+
+  <ion-row padding>
+
+    <ion-col col-8 text-center>
+      <h2>{{ serieName }}</h2>
+    </ion-col>
+
+    <ion-col col-4>    
+      <p text-center>
+        <ion-icon name="happy" *ngIf="serieScore >= 50"  class="big-icon"></ion-icon><br/>
+        <ion-icon name="sad" *ngIf="serieScore < 50"  class="big-icon"></ion-icon><br/>
+        {{ serieScore }}
+      </p>        
+    </ion-col>
+
+  </ion-row>
+
+  <ion-row padding>
+    <h6>Descrição</h6>
+    <p text-justify>
+      {{ serieDescription }}
+    </p>
+  </ion-row>
+
+</ion-content>

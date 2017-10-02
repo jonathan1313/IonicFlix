@@ -38,7 +38,8 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  flix:       (base: #090909, contrast:#FFF)
 );
 
 
@@ -52,7 +53,15 @@ $colors: (
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
+$toolbar-background: (#1D1D1D);
 
+$background-color: (#090909);
+
+$range-md-bar-active-background-color:(#f53d3d);
+
+$text-input-md-highlight-color: (#f53d3d);
+
+$label-md-text-color-focused: (#f53d3d);
 
 
 

@@ -1,3 +1,14 @@
 page-home {
 
+    ion-card img {
+        max-height: 14em;
+        min-height: 14em;
+    }
+
+    .no-img {
+        padding-top: 7em;
+        max-height: 14em;
+        min-height: 14em;
+    }
+
 }
