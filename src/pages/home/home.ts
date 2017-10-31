@@ -5,28 +5,21 @@ import { NavController, ModalController } from 'ionic-angular';
 import { AddSerieModal } from './../add-serie/add-serie';
 import { SeriesDataProvider } from './../../providers/series-data/series-data';
 
+import { Serie } from '../../models/serie.model';
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
 
-  public series: Array<{name: string, description: string, image: string, score: number}> = [];
+  public series: Array<Serie> = [];
 
   constructor(
     public navCtrl: NavController,
     public modalCtrl: ModalController,
     public seriesData: SeriesDataProvider
-  ) {
-
-    // this.series = [
-    //   {name: 'Game of Thrones', description: 'Serie muito boa', image: 'assets/images/got.jpg', score: 55},
-    //   {name: 'Game of Thrones', description: 'Serie muito boa', image: 'assets/images/sv.jpg', score: 55},
-    //   {name: 'Game of Thrones', description: 'Serie muito boa', image: 'assets/images/ww.jpg', score: 55},
-    //   {name: 'Game of Thrones', description: 'Serie muito boa', image: 'assets/images/mr.jpg', score: 55},
-    // ]
-
-  }
+  ) {}
 
   ionViewDidLoad() {
 
@@ -42,7 +35,7 @@ export class HomePage {
 
     let addSerie = this.modalCtrl.create(AddSerieModal);
 
-    addSerie.onDidDismiss((serie: {name: string, description: string, image: string, score: number}) => {
+    addSerie.onDidDismiss((serie: Serie) => {
 
       if(serie) {
         this.series.push(serie);

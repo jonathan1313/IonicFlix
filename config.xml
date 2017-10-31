@@ -3,7 +3,7 @@
     <name>IonicFlix</name>
     <description>Salve as series que seus amigos te indicam e não deixe de assistir nenhuma</description>
     <author email="jonathanwillianevo@hotmail.com" href="https://github.com/jonathan1313">Jonathan Willian</author>
-    <content original-src="index.html" src="http://192.168.43.197:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
     <allow-intent href="http://*/*" />

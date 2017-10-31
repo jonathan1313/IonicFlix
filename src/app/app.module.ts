@@ -22,7 +22,7 @@ import { SeriesDataProvider } from '../providers/series-data/series-data';
   imports: [
     BrowserModule,
     IonicStorageModule.forRoot(),
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
